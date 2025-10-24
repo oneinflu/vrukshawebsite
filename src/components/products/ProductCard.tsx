@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+
 import { Product } from '../../types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { cartAPI } from '../../services/api';
 import { useAuth } from '../../services/AuthContext';
-import {LinkContainer} from 'react-router-bootstrap';
+
 
 interface ProductCardProps {
   product: Product;

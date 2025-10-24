@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Badge, NavDropdown } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useAuth } from '../../services/AuthContext';
 import { categoriesAPI, cartAPI } from '../../services/api';
 
 const Header: React.FC = () => {
-  const { isAuthenticated, logout } = useAuth();
-  const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
+  
   const [cartItemCount, setCartItemCount] = useState<number>(0);
-  const [categories, setCategories] = useState<Array<{
+  // Using a single state for categories that will be organized later
+  const [, setCategories] = useState<Array<{
     _id: string, 
     name: string,
     icon?: string,
@@ -97,7 +98,7 @@ const Header: React.FC = () => {
       <Container>
         {/* Logo on the left */}
         <Navbar.Brand as={Link} to="/" className="fw-bold fs-4 text-success">
-          Vruksha
+          Vruksha Farms
         </Navbar.Brand>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

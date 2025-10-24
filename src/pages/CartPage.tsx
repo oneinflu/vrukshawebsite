@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Button, Alert, Spinner } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import {  Row, Col, Button, Alert, Spinner } from 'react-bootstrap';
+import {  useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBag, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Cart as CartType, CartItem as CartItemType } from '../types';
