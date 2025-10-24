@@ -156,7 +156,7 @@ const Header: React.FC = () => {
               <NavDropdown.Item as={Link} to="/categories">All Categories</NavDropdown.Item>
             </NavDropdown>
             
-            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+           
           </Nav>
           
           {/* Icons on the right */}
