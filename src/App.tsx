@@ -16,6 +16,8 @@ import ProfilePage from './pages/ProfilePage';
 import AboutUsPage from './pages/AboutUsPage';
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
+import CancellationPolicyPage from './pages/CancellationPolicyPage';
+import UserDeletionPolicyPage from './pages/UserDeletionPolicyPage';
 
 // Import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -40,6 +42,8 @@ const App: React.FC = () => {
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/cancellation" element={<CancellationPolicyPage />} />
+            <Route path="/user-deletion" element={<UserDeletionPolicyPage />} />
           </Routes>
         </Layout>
       </Router>
